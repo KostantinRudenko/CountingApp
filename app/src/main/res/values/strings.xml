@@ -5,6 +5,10 @@
     <string name="countingBtn">Counting</string>
     <string name="quadraticEquationBtn">Quadratic Equation\nCounting</string>
 
+    <string name="countingLabel">Counting</string>
+    <string name="enterFN">Number 1:</string>
+    <string name="enterSN">Number 2:</string>
+
     <string name="title">Quadratic equation:</string>
     <string name="equation">ax^2+bx+c</string>
     <string name="results">Results:</string>
@@ -13,4 +17,9 @@
     <string name="enterA">Enter a:</string>
     <string name="enterB">Enter b:</string>
     <string name="enterC">Enter c:</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="mult">*</string>
+    <string name="div">//</string>
 </resources>
