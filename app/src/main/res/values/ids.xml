@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="entA" type="id" />
+    <item name="equation" type="id" />
+    <item name="ATF" type="id" />
+    <item name="entB" type="id" />
+    <item name="BTF" type="id" />
+    <item name="entC" type="id" />
+    <item name="CTF" type="id" />
+    <item name="restxt" type="id" />
+    <item name="results" type="id" />
+    <item name="countBtn" type="id" />
+</resources>
