@@ -22,4 +22,6 @@
     <string name="minus">-</string>
     <string name="mult">*</string>
     <string name="div">//</string>
+
+    <string name="exit">Back</string>
 </resources>
