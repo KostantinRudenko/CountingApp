@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">QuadraticEquationApp</string>
+
+    <string name="mainLabel">Choose option</string>
+    <string name="countingBtn">Counting</string>
+    <string name="quadraticEquationBtn">Quadratic Equation\nCounting</string>
+
     <string name="title">Quadratic equation:</string>
     <string name="equation">ax^2+bx+c</string>
     <string name="results">Results:</string>
     <string name="empty"> </string>
     <string name="count">Count results</string>
-
     <string name="enterA">Enter a:</string>
     <string name="enterB">Enter b:</string>
     <string name="enterC">Enter c:</string>
