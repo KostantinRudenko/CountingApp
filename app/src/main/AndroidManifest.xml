@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CountingApp"
         tools:targetApi="31">
         <activity
+            android:name=".QuadraticEquationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CounterActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
