@@ -42,24 +42,22 @@ public class QuadraticEquationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if    (!ATxt.getText().toString().trim().isEmpty()
                     && !BTxt.getText().toString().trim().isEmpty()
-                    && !CTxt.getText().toString().trim().isEmpty())
-                {
-                int a = Integer.parseInt(ATxt.getText().toString());
-                int b = Integer.parseInt(BTxt.getText().toString());
-                int c = Integer.parseInt(CTxt.getText().toString());
+                    && !CTxt.getText().toString().trim().isEmpty()) {
+                    try {
+                        int a = Integer.parseInt(ATxt.getText().toString());
+                        int b = Integer.parseInt(BTxt.getText().toString());
+                        int c = Integer.parseInt(CTxt.getText().toString());
 
+                        double sqrtD = Math.sqrt(Math.pow(b, 2) - 4 * a * c);
+                        double x1 = (-b + sqrtD) / (2 * a);
+                        double x2 = (-b - sqrtD) / (2 * a);
 
-                double sqrtD = Math.sqrt(Math.pow(b, 2) - 4 * a * c);
-                double x1 = (-b + sqrtD) / (2 * a);
-                double x2 = (-b - sqrtD) / (2 * a);
-
-                    if (!Double.isNaN(x1) && !Double.isNaN(x2))
-                    {
-                        resText.setText(String.format("%.2f; %.2f", x1, x2));
-                    }
-
-                    else
-                    {
+                        if (!Double.isNaN(x1) && !Double.isNaN(x2)) {
+                            resText.setText(String.format("%.2f; %.2f", x1, x2));
+                        } else {
+                            resText.setText("Fuck you");
+                        }
+                    } catch (NumberFormatException e) {
                         resText.setText("Fuck you");
                     }
                 }
