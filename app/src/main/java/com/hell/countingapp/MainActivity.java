@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         });
         Button counterBtn = (Button) findViewById(R.id.countingBtn);
         Button quadraticE = (Button) findViewById(R.id.quadraticEquationBtn);
+
+        // Listeners
         counterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         quadraticE.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
