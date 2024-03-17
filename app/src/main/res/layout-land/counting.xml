@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainCountingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/countingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countingLabel"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/entNum1"
+        android:text="@string/enterFN"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/countingLabel"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/FNE"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/countingLabel"
+        android:layout_toRightOf="@+id/entNum1"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/entB"
+        android:text="@string/enterSN"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/FNE"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SNE"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/FNE"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/entB" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:text="@string/results"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/SNE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:text="@string/empty"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/SNE"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/resultText"
+        android:layout_marginBottom="20dp"
+
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/plusMinusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:text="@string/plus"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/minusBtn"
+            android:text="@string/minus"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/multDivLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plusMinusLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/multBtn"
+            android:text="@string/mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/divBtn"
+            android:text="@string/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit"
+        android:text="@string/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:textSize="20sp"/>
+
+</RelativeLayout>
