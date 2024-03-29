@@ -34,8 +34,7 @@ public class CounterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(CounterActivity.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
         plusBtn.setOnClickListener(new View.OnClickListener() {

@@ -31,10 +31,7 @@ public class QuadraticEquationActivity extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent
-                (QuadraticEquationActivity.this, MainActivity.class);
-
-                startActivity(intent);
+                finish();
             }
         });
         countBtn.setOnClickListener(new View.OnClickListener() {
