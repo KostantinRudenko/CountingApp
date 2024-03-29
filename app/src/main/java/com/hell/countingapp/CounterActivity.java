@@ -44,11 +44,11 @@ public class CounterActivity extends AppCompatActivity {
                 if (!AreEmpty())
                 {
                     double[] nums = CheckForDouble();
-                    if (nums.length != 2) {
+                    if (nums.length == 2) {
                         res.setText(String.format("%.2f", nums[0] + nums[1]));}
                     else
                     {
-                        res.setText("Fuck you");
+                        res.setText("No");
                     }
                 }
             }
@@ -60,11 +60,11 @@ public class CounterActivity extends AppCompatActivity {
                 if (!AreEmpty())
                 {
                     double[] nums = CheckForDouble();
-                    if (nums.length != 2) {
+                    if (nums.length == 2) {
                         res.setText(String.format("%.2f", nums[0] - nums[1]));}
                     else
                     {
-                        res.setText("Fuck you");
+                        res.setText("No");
                     }
                 }
             }
@@ -77,12 +77,12 @@ public class CounterActivity extends AppCompatActivity {
                 {
                     double[] nums = CheckForDouble();
 
-                    if (nums.length != 2) {
+                    if (nums.length == 2) {
                         res.setText(String.format("%.2f", nums[0] * nums[1]));
                     }
                     else
                     {
-                        res.setText("Fuck you");
+                        res.setText("No");
                     }
                 }
             }
@@ -94,12 +94,12 @@ public class CounterActivity extends AppCompatActivity {
                 if (!AreEmpty())
                 {
                     double[] nums = CheckForDouble();
-                    if (nums.length != 3) {
+                    if (nums.length == 2) {
                         res.setText(String.format("%.2f", nums[0] / nums[1]));
                     }
                     else
                     {
-                        res.setText("Fuck you");
+                        res.setText("No");
                     }
                 }
             }

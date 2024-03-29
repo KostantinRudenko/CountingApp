@@ -55,10 +55,10 @@ public class QuadraticEquationActivity extends AppCompatActivity {
                         if (!Double.isNaN(x1) && !Double.isNaN(x2)) {
                             resText.setText(String.format("%.2f; %.2f", x1, x2));
                         } else {
-                            resText.setText("Fuck you");
+                            resText.setText("No");
                         }
                     } catch (NumberFormatException e) {
-                        resText.setText("Fuck you");
+                        resText.setText("No");
                     }
                 }
                 else
